@@ -1,0 +1,138 @@
+algoritmo "Missão Semana 4 v2"
+
+var
+tempCelsius, tempFahrenheint, Reais, Dolares, cotacaoDolar : Real
+opcaomenu, menutemp, menumoeda : literal
+
+inicio
+
+Repita
+ Escreval ()
+ Escreval ("==== Sistema de converção Fácil ====")
+ Escreval ()
+ Escreval ("Escolha o que você quer converter")
+ Escreval ()
+   escreval (" 1) Converter temperatura")
+   Escreval ()
+   escreval (" 2) Converter Moeda")
+   Escreval ()
+   escreval (" 3) Sair do Conversor")
+   Escreval ()
+   leia (opcaomenu)
+   limpatela
+
+ Escolha opcaomenu
+  caso "1"  //menu temperatura
+  Escreval ("Conversor de Temperatura")
+  Escreval ()
+     escreval (" 1) Converter Celsius para Fahrenheint")
+     Escreval ()
+     escreval (" 2) Converter Fahrenheint para Celsius")
+     Escreval ()
+     Escreval (" 3) Voltar para menu principal")
+     Escreval ()
+     leia (menutemp)
+     limpatela
+     
+     Se menutemp = "1" entao
+         escreval("Qual a temperatura em Celsius?")
+         Escreval ()
+         leia(tempCelsius)
+         tempFahrenheint <- (tempCelsius)* (9/5) + 32
+         Escreval ()
+         Escreval("A temperatura em Fahrenheit é: ", tempFahrenheint)
+         Escreval ()
+      senao
+       Se menutemp = "2" entao
+         escreval("Qual a temperatura em Fahrenheit?")
+         Escreval ()
+         leia(tempFahrenheint)
+         Escreval ()
+         tempCelsius <- (tempFahrenheint - 32)* 5/9)
+         escreval("A temperatura em Celsius é: ", tempCelsius)
+         Senao
+         Se menutemp = "3" entao
+         Escreval(opcaomenu)
+         fimse
+         limpatela
+         
+       fimse
+      fimse
+      
+
+      
+      Escreval ("=====================================")
+      Escreval (" Gostaria de fazer outra conversão?")
+      Escreval ("=====================================")
+     // fim menu temperatura
+     
+
+ Caso "2" //menu moeda
+  Escreval ("Conversor de Moeda")
+  Escreval ()
+  Escreval ("===== Qual a cotação do Dólar hoje? =====")
+  Escreval ()
+  Escreval ("[você pode verificar a cotação em: economia.uol.com.br/cotacoes/cambio ]")
+  Escreval ()
+  Escreval ()
+  Leia (cotacaoDolar)
+
+  limpatela
+  
+  Escreval ()
+     Escreval ("Conversor de Moeda")
+     Escreval ()
+     Escreval (" 1) Converter Real para Dólar")
+     Escreval ()
+     Escreval (" 2) Converter Dólar para Real")
+     Escreval ()
+     Escreval (" 3) Voltar para menu principal")
+     Escreval ()
+     leia (menumoeda)
+
+
+     limpatela
+
+     Se menumoeda = "1" entao
+         escreval("Qual o valor em Real?")
+         Escreval ()
+         leia(Reais)
+         Dolares <- Reais / cotacaoDolar
+         Escreval ()
+         Escreval("R$",Reais," Reais equivalem à $",Dolares," Dólares")
+         Escreval ()
+      senao
+       Se menumoeda = "2" entao
+         escreval("Qual o valor em Dólares?")
+         Escreval ()
+         leia(Dolares)
+         Reais <- Dolares * cotacaoDolar
+         Escreval ()
+         Escreval("$",Dolares," Dólares equivalem à R$",Reais," Reais")
+         Escreval ()
+
+          Senao
+           Se menutemp = "3" entao
+           Escreval(opcaomenu)
+          fimse
+          
+       fimse
+      fimse
+      Escreval ("=====================================")
+      Escreval (" Gostaria de fazer outra conversão?")
+      Escreval ("=====================================")
+      
+ 
+ fimescolha
+
+Ate opcaomenu = "3"
+Escreval ()
+
+se opcaomenu = "3" entao
+   Escreval ("Obrigado por usar nosso conversor!")
+Fimse
+
+
+
+
+fimalgoritmo
