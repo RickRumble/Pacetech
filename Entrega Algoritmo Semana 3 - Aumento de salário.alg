@@ -1,14 +1,14 @@
-algoritmo "Entrega Algoritimo Semana 3 - Aumento de sal·rio"
+algoritmo "Entrega Algoritimo Semana 3 - Aumento de sal√°rio"
 
 var
-salario, salariocomaumento: real
+salario : real
 multiplicacao: real
 inicio
-Escreval("informe seu sal·rio?")
+Escreval("informe seu sal√°rio?")
 Leia (salario)
 
-salariocomaumento <- salario * 1.3
+salario <- salario * 1.3
 
-Escreval ("ParabÈns, vocÍ ganhou um aumento! Seu novo sal·rio È:", " ", salariocomaumento)
+Escreval ("Parab√©ns, voc√™ ganhou um aumento! Seu novo sal√°rio √©:", " ", salario)
 
 fimalgoritmo
