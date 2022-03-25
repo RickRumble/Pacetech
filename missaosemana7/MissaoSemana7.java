@@ -6,9 +6,9 @@ public class MissaoSemana7 {
         
         
         /* 
-        OBS: Sem que copiar trecho de código não é uma boa prática, mas não
-        consegui pesquisar a tempo uma forma de otimização. Nas próximas serão
-        Melhores1        
+        OBS: Sei que copiar trecho de código não é uma boa prática, mas não
+        consegui pesquisar a tempo, uma forma de otimização. Nas próximas serão
+        Melhores!        
         */
     
      Empregado EmpregadoJoao = new Empregado("João", "Silva", 1000.0f);
