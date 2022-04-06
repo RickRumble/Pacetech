@@ -1,4 +1,4 @@
-algoritmo "Missão Semana 5"
+algoritmo "MissÃ£o Semana 5"
 
 var
 temperatura: vetor [1..4] de real
@@ -41,12 +41,12 @@ ordenar ()
 Escreval ()
 se menu = 1 entao
    para i de 1 ate 4 faca
-   escreval("Temperatura", temperatura[i], "graus Celsius, registrada às", hora[i], "h corresponde a ", ((temperatura[i] * 1.8) + 32):4:2, "Fahrenheint")
+   escreval("Temperatura", temperatura[i], "graus Celsius, registrada Ã s", hora[i], "h corresponde a ", ((temperatura[i] * 1.8) + 32):4:2, "Fahrenheint")
    fimpara
    Escreval ()
 senao
     para i de 1 ate 4 faca
-    escreval("Temperatura", temperatura[i], "graus Fahrenheint, registrada às", hora[i], "h corresponde a ", ((temperatura[i] * 1.8) + 32):4:2, "graus Fahrenheint")
+    escreval("Temperatura", temperatura[i], "graus Fahrenheint, registrada Ã s", hora[i], "h corresponde a ", ((temperatura[i] * 1.8) + 32):4:2, "graus Fahrenheint")
     fimpara
 fimse
 fimprocedimento
@@ -68,7 +68,7 @@ fimpara
 fimprocedimento
 
 inicio
-Escreval ("==== Sistema de converção Fácil ====")
+Escreval ("==== Sistema de converÃ§Ã£o FÃ¡cil ====")
 repita
    escolhertemperatura()
 
@@ -82,7 +82,7 @@ repita
       caso "3"
       outrocaso
          escreval()
-         escreval("Opção inválida.")
+         escreval("OpÃ§Ã£o invÃ¡lida.")
    fimescolha
    Escreval ()
 ate menu = "3"
